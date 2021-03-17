@@ -1,0 +1,26 @@
+package com.handson;
+
+import java.util.Scanner;
+
+public class Problem5 {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);		
+		int i;
+		String s1=s.nextLine();
+		char ch[]=new char[s1.length()];
+		for(i=1;i<=s1.length()-1;i++){
+			ch[i]=s1.charAt(i);
+	}
+		for(i=1;i<=ch.length-1;i++)
+		if(ch[i]=='a') {
+			if(i%2==0) {
+				System.out.println("Valid");
+			}
+			else {
+				System.out.println("Invalid");
+			}
+		}
+
+}
+}

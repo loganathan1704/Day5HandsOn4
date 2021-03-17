@@ -1,0 +1,37 @@
+package com.handson;
+
+import java.util.Scanner;
+
+class UserMainCode{
+	static boolean b=false;
+	
+	 static boolean validateStr(String date) {
+		String stringFormat = "\\s[a-zA-Z]\\s[a-zA-Z]\\*\\*\\s[a-zA-Z]\\s[a-zA-Z]";
+		
+		return b=date.matches(stringFormat);
+			
+		}
+	 void output() {
+		 if(b==true)
+			 System.out.println("Valid");
+		 
+		 else
+			 System.out.println("Invalid");
+			 
+	 }
+	}
+
+public class Problem4 {
+
+	public static void main(String[] args) {		
+
+	
+				  UserMainCode u=new UserMainCode();
+		          Scanner s=new Scanner(System.in);
+		          String str=s.nextLine();
+		          u.validateStr(str);
+		         u.output();
+			}
+		
+	}
+
